@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="uno" CONFIG_NAME="uno" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9eaa610b-fdc4-4a1f-b615-19c6964a7a47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/motor.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-uno-Z_DUMMY_TARGET" />
+  </component>
+  <component name="ProjectId" id="1jamvgw0ble7iPjVe1ruKzcd9aS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eaa610b-fdc4-4a1f-b615-19c6964a7a47" name="Default Changelist" comment="" />
+      <created>1604050808449</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604050808449</updated>
+      <workItem from="1604050809621" duration="7786000" />
+      <workItem from="1604344424774" duration="194000" />
+      <workItem from="1606322711479" duration="34000" />
+      <workItem from="1606322757894" duration="748000" />
+      <workItem from="1606326512436" duration="224000" />
+      <workItem from="1606488197300" duration="250000" />
+      <workItem from="1608388111038" duration="561000" />
+      <workItem from="1608671101669" duration="2310000" />
+      <workItem from="1608674050957" duration="1305000" />
+      <workItem from="1608735083833" duration="780000" />
+      <workItem from="1608899854427" duration="525000" />
+      <workItem from="1608999098881" duration="923000" />
+      <workItem from="1610292045760" duration="890000" />
+      <workItem from="1615391204622" duration="848000" />
+      <workItem from="1615392100837" duration="1283000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615393357443">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/1440.-98.1920.1055@0.0.1440.900" timestamp="1608388635959" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1615393357443" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1615392922580">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-123.1920.1080@0.0.1440.900" timestamp="1608672669007" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-98.1920.1055@0.0.1440.900" timestamp="1608674033847" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1615392922580" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1615392922580">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.-123.1920.1080@0.0.1440.900" timestamp="1608672669006" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.-98.1920.1055@0.0.1440.900" timestamp="1608674033846" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1615392922580" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1615392922579">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.-123.1920.1080@0.0.1440.900" timestamp="1608672669005" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.-98.1920.1055@0.0.1440.900" timestamp="1608674033845" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1615392922579" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1615392922580">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.-123.1920.1080@0.0.1440.900" timestamp="1608672669007" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.-98.1920.1055@0.0.1440.900" timestamp="1608674033847" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1615392922580" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1615393322461">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.-123.1920.1080@0.0.1440.900" timestamp="1608900215672" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/1440.-98.1920.1055@0.0.1440.900" timestamp="1608674029604" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1615393322461" />
+  </component>
+</project>
