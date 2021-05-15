@@ -1,31 +1,38 @@
 #include "led.h"
 #include "motor.h"
-AccelStepper stepper = AccelStepper(motorInterfaceType, stepPin, dirPin);
+AccelStepper stepper1 = AccelStepper(motorInterfaceType, stepPin1, dirPin1);
+AccelStepper stepper2 = AccelStepper(motorInterfaceType, stepPin2, dirPin2);
 
 void setup() {
     Serial.begin(9600);
-//    LEDS.addLeds<WS2812,DATA_PIN_LED,RGB>(leds,NUM_LEDS);
-//    LEDS.setBrightness(LED_BRIGHTNESS);
-    pinMode(stepPin, OUTPUT);
-    pinMode(dirPin, OUTPUT);
+    LEDS.addLeds<WS2812,DATA_PIN_LED,RGB>(leds,NUM_LEDS);
+    LEDS.setBrightness(LED_BRIGHTNESS);
+    pinMode(stepPin1, OUTPUT);
+    pinMode(dirPin1, OUTPUT);
+    pinMode(stepPin2, OUTPUT);
+    pinMode(dirPin2, OUTPUT);
     pinMode(endSwitch, INPUT);
-    stepper.setMaxSpeed(1000);
-    goHome();
-    int drink[] = {3,4,6,1};
-    goToBottle(drink,4);
+    stepper1.setMaxSpeed(1000);
+    stepper2.setMaxSpeed(1000);/**
+    stepper1.setEnablePin(stepPin1);
+    stepper2.setEnablePin(stepPin2);
+    stepper1.disableOutputs();
+    stepper2.disableOutputs();**/
+//    goHome();
 }
-// bouteille 1 = -500
-// boutei@lle 2 = -1035
-// bouteille 2 = -1525
-// bouteille 2 = -2030
-// bouteille 2 = -2535
-// bouteille 2 = -3040
 void loop() {
-    //    ledLoading(0,8,50);
-//    ledLoading(8,24,30);
-//    ledFinished();
-//    ledStarting();
-//    pushBottle();
-//    goToBottle(1);
+    delay(2000);
+    int drink[] = {3,2,5,4};
+//   pushBottle();
+//      ledLoading(0,8,40);
+//      ledLoading(8,24,30);
+  //    ledFinished();
+  //    ledStarting();
+    //  pushBottle();
+    goHome();
+    ledStarting();
+    goToBottle(drink,4);
+    ledFinished();
+    delay(4000);
 }
 

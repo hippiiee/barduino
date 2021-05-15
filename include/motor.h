@@ -3,15 +3,18 @@
 
 #include <Arduino.h>
 #include "../lib/AccelStepper/src/AccelStepper.h"
+//#include "led.h"
 
-#define dirPin 2
-#define stepPin 3
+#define dirPin1 2
+#define stepPin1 3
+#define dirPin2 4
+#define stepPin2 5
 #define motorInterfaceType 1
 
-static const int endSwitch = 4;
-static const int stepDelay = 1000;
-static const int posBottle[6] = {-500,-1035,-1525,-2030,-2535,-3040};
-extern AccelStepper stepper;
+static const int endSwitch = 8;
+static const int posBottle[6] = {-520,-1055,-1535,-2050,-2555,-3040};
+extern AccelStepper stepper1;
+extern AccelStepper stepper2;
 
 void pushBottle();
 void goToBottle(int bottleNumber[], int size);

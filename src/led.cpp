@@ -8,12 +8,12 @@ void ledLoading(int min, int max, int time) {
         leds[i] = CHSV(hue++,255,255);
         FastLED.show();
         delay(time);
-    }
+    }/**
     for(int i = min; i < max; i++){
         delay(time);
         leds[i] = CRGB::Black;
         FastLED.show();
-    }
+    }**/
 }
 
 void ledStarting(){

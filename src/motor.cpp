@@ -1,65 +1,59 @@
+#include <led.h>
 #include "motor.h"
 
 void pushBottle(){
-    //clockwise
-    digitalWrite(dirPin, HIGH);
-
-    for(int x = 0; x < 2000; x++){ // 200 is one turn
-        digitalWrite(stepPin, HIGH);
-        delayMicroseconds(stepDelay);
-        digitalWrite(stepPin, LOW);
-        delayMicroseconds(stepDelay);
+    while(stepper2.currentPosition() < 2100){
+        Serial.println(stepper2.currentPosition());
+        stepper2.setSpeed(600);
+        stepper2.runSpeed();
     }
-    delay(1000); // Wait a second
-    digitalWrite(dirPin, LOW);
-
-    // Spin motor
-    for(int x = 0; x < 2000; x++)
-    {
-        digitalWrite(stepPin, HIGH);
-        delayMicroseconds(stepDelay);
-        digitalWrite(stepPin, LOW);
-        delayMicroseconds(stepDelay);
+    for(int i = 0; i < 4; i++){
+        ledLoading(0,8,40);
+        ledLoading(8,24,30);
     }
-    delay(1000); // Wait a second
+    while(stepper2.currentPosition() > 0) {
+        Serial.println(stepper2.currentPosition());
+        stepper2.setSpeed(-600);
+        stepper2.runSpeed();
+    }
 };
 
 void goHome(){
     bool stopHome = false;
-    while(stepper.currentPosition() > -100){
-        stepper.setSpeed(-200);
-        stepper.runSpeed();
+    while(stepper1.currentPosition() > -100){
+        stepper1.setSpeed(-200);
+        stepper1.runSpeed();
     }
-    stepper.setSpeed(400);
+    stepper1.setSpeed(400);
     while(!stopHome){ //200 is one motor turn
         if(digitalRead(endSwitch) == HIGH){
             stopHome = true;
         }else{
-            stepper.runSpeed();
+            stepper1.runSpeed();
         }
     }
-    stepper.setCurrentPosition(0);
-    while(stepper.currentPosition() != -15){
-        stepper.setSpeed(-50);
-        stepper.runSpeed();
+    stepper1.setCurrentPosition(0);
+    while(stepper1.currentPosition() != -15){
+        stepper1.setSpeed(-50);
+        stepper1.runSpeed();
     }
+//    ledFinished();
 }
 
 void goToBottle(int bottleNumber[],int size){
     int position = 0;
-    stepper.setAcceleration(200);
-    stepper.setSpeed(-400);
-    Serial.println(sizeof(bottleNumber));
+    stepper1.setAcceleration(200);
+    stepper1.setSpeed(-400);
     for(int i = 0; i < size; i++){
-        Serial.println(i);
         position = posBottle[bottleNumber[i]-1];
-        if(stepper.currentPosition() != position){ //200 is one motor turn
+        if(stepper1.currentPosition() != position){ //200 is one motor turn
             if(digitalRead(endSwitch) == HIGH){
                 goHome();
             }else{
-                stepper.moveTo(position);
-                stepper.runToPosition();
-                delay(1000);
+                stepper1.moveTo(position);
+                stepper1.runToPosition();
+                delay(500);
+                pushBottle();
             }
         }
     }
