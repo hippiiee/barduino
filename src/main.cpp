@@ -13,26 +13,14 @@ void setup() {
     pinMode(dirPin2, OUTPUT);
     pinMode(endSwitch, INPUT);
     stepper1.setMaxSpeed(1000);
-    stepper2.setMaxSpeed(1000);/**
-    stepper1.setEnablePin(stepPin1);
-    stepper2.setEnablePin(stepPin2);
-    stepper1.disableOutputs();
-    stepper2.disableOutputs();**/
-//    goHome();
+    stepper2.setMaxSpeed(1000);
 }
 void loop() {
     delay(2000);
-    int drink[] = {3,2,5,4};
-//   pushBottle();
-//      ledLoading(0,8,40);
-//      ledLoading(8,24,30);
-  //    ledFinished();
-  //    ledStarting();
-    //  pushBottle();
-    goHome();
-    ledStarting();
-    goToBottle(drink,4);
-    ledFinished();
+    int drink[] = {3,2,5,4}; // the position of the bottle you want to use in your cocktail
+    goHome(); // go to the home position
+    ledStarting(); // start the led animation
+    goToBottle(drink,4); // go to the bottle position and push the bottle, the number of bottle is 4
+    ledFinished(); // finish the led animation
     delay(4000);
 }
-
