@@ -2,6 +2,8 @@
 <p align="center">
   An automated cocktail machine based on arduino.
   <br>
+  <a href="https://hippie.cat/post/Project/arduino-cocktail-bar">project blog article</a>
+  <br>
   <a href="https://twitter.com/intent/follow?screen_name=hiippiiie" title="Follow"><img src="https://img.shields.io/twitter/follow/hiippiiie?label=hiippiiie&style=social"></a>
   <br>
 </p>
